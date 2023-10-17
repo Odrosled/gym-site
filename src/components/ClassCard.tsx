@@ -9,11 +9,8 @@ interface ClassCardProps {
 
 const ClassCard = ({ img, title, trainer, time }: ClassCardProps) => {
   return (
-    <div className="h-[450px] w-[350px]">
-      <div
-        className={`h-full bg-no-repeat bg-cover rounded-2xl bg-bottom relative`}
-        style={{ backgroundImage: `url(${img})` }}
-      >
+    <div className="h-[450px]">
+      <div className={`h-full bg-no-repeat bg-cover rounded-2xl bg-bottom relative`} style={{ backgroundImage: `url(${img})` }}>
         <div className="p-8 text-white flex flex-col gap-3 absolute top-[50%]">
           <h1 className="font-bold text-3xl">{title}</h1>
           <div className="bg-[#f97316] h-[4px] w-[50px]"></div>

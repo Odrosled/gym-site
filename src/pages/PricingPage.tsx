@@ -9,7 +9,9 @@ const PricingPage = () => {
   return (
     <>
       <TopBanner title="Pricing" />
-      <Pricing />;
+      <div className="my-32">
+        <Pricing />;
+      </div>
     </>
   );
 };
